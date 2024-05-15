@@ -98,6 +98,47 @@ closestPair([4, 2, 1, 7, 9, 10]);
 
 class Calculator {
   // Tu solución acá
+  constructor() {
+    this.ultimoResultadoCalculado = null;
+    this.historialDeResultados = [];
+  }
+
+  add(a, b) {
+    this.ultimoResultadoCalculado = a + b;
+    this.historialDeResultados.push(this.ultimoResultadoCalculado);
+    return this.historialDeResultados;
+  }
+  substract(a, b) {
+    this.ultimoResultadoCalculado = a - b;
+    this.historialDeResultados.push(this.ultimoResultadoCalculado);
+    return this.historialDeResultados;
+  }
+
+  multiply(a, b) {
+    this.ultimoResultadoCalculado = a * b;
+    this.historialDeResultados.push(this.ultimoResultadoCalculado);
+    return this.historialDeResultados;
+  }
+
+  divide(a, b) {
+    if (b === 0) {
+      throw new Error("La division por cero no esta permitida");
+    } else {
+      this.ultimoResultadoCalculado = a / b;
+      this.historialDeResultados.push(this.ultimoResultadoCalculado);
+      return this.historialDeResultados;
+    }
+  }
+
+  get lastResult() {
+    const ultimoResultado =
+      this.historialDeResultados[this.historialDeResultados.length - 1];
+    return ultimoResultado;
+  }
+
+  get historialDeResultados() {
+    return this.historialDeResultados;
+  }
 }
 
 module.exports = {
