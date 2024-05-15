@@ -25,6 +25,7 @@ function isPalindrome(str) {
     return false;
   }
 }
+
 isPalindrome("oso"); //true
 
 /*
@@ -42,7 +43,26 @@ isPalindrome("oso"); //true
 
 function closestPair(arr) {
   // Tu solución acá
+  arr.sort((a, b) => a - b);
+
+  let diferenciaMinima = Infinity;
+  let parMasCercano = [];
+
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      const diferencia = arr[i] - arr[j];
+      const diferenciaAbsoluta = diferencia < 0 ? diferencia * -1 : diferencia;
+
+      if (diferenciaAbsoluta < diferenciaMinima) {
+        diferenciaMinima = diferenciaAbsoluta;
+        parMasCercano = [arr[i], arr[j]];
+      }
+    }
+  }
+  return parMasCercano;
 }
+
+closestPair([4, 2, 1, 7, 9, 10]);
 
 /*
   Ejercicio 4: Calculadora - Programación Orientada a Objetos
