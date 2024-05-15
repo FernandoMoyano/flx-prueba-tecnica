@@ -110,7 +110,7 @@ class Calculator {
   }
   subtract(a, b) {
     this.lastCalculatedResult = a - b;
-    this.historialDeResultados.push(this.lastCalculatedResult);
+    this.resultsHistory.push(this.lastCalculatedResult);
     return this.lastCalculatedResult;
   }
 
@@ -122,7 +122,7 @@ class Calculator {
 
   divide(a, b) {
     if (b === 0) {
-      throw new Error("La division por cero no esta permitida");
+      throw new Error("Division by zero is not allowed");
     } else {
       this.lastCalculatedResult = a / b;
       this.resultsHistory.push(this.lastCalculatedResult);
@@ -141,8 +141,8 @@ class Calculator {
 }
 
 Calculator.prototype.exponentiate = function (base, exponent) {
-  if (exponent <= 0) {
-    throw new Error("El exponente no puede ser 0 o negativo");
+  if (exponent < 0) {
+    throw new Error("Exponentiation with negative exponent is not allowed");
   } else {
     this.lastCalculatedResult = Math.pow(base, exponent);
     this.resultsHistory.push(this.lastCalculatedResult);
