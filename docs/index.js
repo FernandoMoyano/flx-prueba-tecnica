@@ -99,45 +99,44 @@ closestPair([4, 2, 1, 7, 9, 10]);
 class Calculator {
   // Tu solución acá
   constructor() {
-    this.ultimoResultadoCalculado = null;
-    this.historialDeResultados = [];
+    this.lastCalculatedResult = null;
+    this.resultsHistory = [];
   }
 
   add(a, b) {
-    this.ultimoResultadoCalculado = a + b;
-    this.historialDeResultados.push(this.ultimoResultadoCalculado);
-    return this.historialDeResultados;
+    this.lastCalculatedResult = a + b;
+    this.resultsHistory.push(this.lastCalculatedResult);
+    return this.lastCalculatedResult;
   }
-  substract(a, b) {
-    this.ultimoResultadoCalculado = a - b;
-    this.historialDeResultados.push(this.ultimoResultadoCalculado);
-    return this.historialDeResultados;
+  subtract(a, b) {
+    this.lastCalculatedResult = a - b;
+    this.historialDeResultados.push(this.lastCalculatedResult);
+    return this.lastCalculatedResult;
   }
 
   multiply(a, b) {
-    this.ultimoResultadoCalculado = a * b;
-    this.historialDeResultados.push(this.ultimoResultadoCalculado);
-    return this.historialDeResultados;
+    this.lastCalculatedResult = a * b;
+    this.resultsHistory.push(this.lastCalculatedResult);
+    return this.lastCalculatedResult;
   }
 
   divide(a, b) {
     if (b === 0) {
       throw new Error("La division por cero no esta permitida");
     } else {
-      this.ultimoResultadoCalculado = a / b;
-      this.historialDeResultados.push(this.ultimoResultadoCalculado);
-      return this.historialDeResultados;
+      this.lastCalculatedResult = a / b;
+      this.resultsHistory.push(this.lastCalculatedResult);
+      return this.lastCalculatedResult;
     }
   }
 
-  get lastResult() {
-    const ultimoResultado =
-      this.historialDeResultados[this.historialDeResultados.length - 1];
+  getLastResult() {
+    const ultimoResultado = this.resultsHistory[this.resultsHistory.length - 1];
     return ultimoResultado;
   }
 
-  get historialDeResultados() {
-    return this.historialDeResultados;
+  getResultsHistory() {
+    return this.resultsHistory;
   }
 }
 
