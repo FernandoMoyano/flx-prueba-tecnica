@@ -18,7 +18,14 @@ reverseString("hola"); //aloh
 */
 function isPalindrome(str) {
   // Tu solución acá
+  const reversed = str.split("").reverse().join("");
+  if (reversed === str) {
+    return true;
+  } else {
+    return false;
+  }
 }
+isPalindrome("oso"); //true
 
 /*
   Ejercicio 3: Find the Nearest Pair
