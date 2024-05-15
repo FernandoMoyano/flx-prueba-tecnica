@@ -138,6 +138,16 @@ class Calculator {
   getResultsHistory() {
     return this.resultsHistory;
   }
+
+  exponentiate(base, exponent) {
+    if (exponent <= 0) {
+      throw new Error("El exponente no puede ser 0 o negativo");
+    } else {
+      this.lastCalculatedResult = Math.pow(base, exponent);
+      this.resultsHistory.push(this.lastCalculatedResult);
+      return this.lastCalculatedResult;
+    }
+  }
 }
 
 module.exports = {
