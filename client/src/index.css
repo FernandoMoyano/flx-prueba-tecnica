@@ -1,0 +1,106 @@
+.user-edit-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 16px; 
+}
+
+.user-edit-form .ant-input {
+  width: 100%;
+}
+
+.modal-height{
+  height: 400px;
+}
+
+.delete-button{
+  background-color: red;
+}
+.delete-button:hover{
+  background-color: rgb(238, 72, 72)!important;
+}
+
+
+.layout{
+  height: 100vh;
+}
+.header{
+  background-color: rgba(194, 194, 194, 0.384);
+  height: 80px;
+  border-radius: 8px;
+}
+
+.container-search{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+  justify-content: space-between;
+}
+
+.pagination{
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255); 
+  z-index: 1000;
+}
+
+/* Tabla */
+
+.table-container {
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+
+  .container-search{
+    justify-content: end;
+  }
+
+  .user-edit-form {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr ; 
+    gap: 16px; 
+  }
+  .ant-modal-wrap {
+    justify-content: center;
+  }
+  .ant-modal-content{
+    width: auto;
+    align-content: center;  
+  }
+
+  .table-container {
+    padding: 0 10px;
+  }
+
+  .ant-table {
+    font-size: 12px;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    padding: 8px;
+  }
+
+  .ant-btn {
+    font-size: 12px;
+  }
+}

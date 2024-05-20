@@ -1,30 +1,66 @@
-# React + TypeScript + Vite
+## 📄Pasos a seguir para ejecutar el Proyecto en tu maquina
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+#### Clona el proyecto👇🏾
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+git clone [url del repositorio]
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### Dirigete a la carpeta **client**👇🏾
+
+```
+cd client
+```
+
+#### Instala las dependencias👇🏾
+
+```
+npm install
+```
+
+#### Dirigete a la carpeta **api** en la raiz del proyecto👇🏾
+
+```
+cd api
+```
+
+#### Instala las dependencias👇🏾
+
+```
+npm install
+```
+
+#### Posicionado en la carpeta client Inicia el servidor de desarrollo👇🏾
+
+```
+npm run dev
+```
+
+#### Posicionado en la carpeta api Inicia el servidor de Json Server👇🏾
+
+```
+npm run serveer
+```
+
+## 🎉🎉 Estas Listo para probar el proyecto y modificarlo como tu quieras.
+
+#### Caracteristicas del Proyecto👇🏾
+
+---
+
+- [x] Utiliza React para construir la interfaz de usuario.
+- [x] La aplicación debe ser un CRUD completo, permitiendo crear, leer, actualizar y eliminar usuarios.
+- [x] Implementa validaciones en los formularios para garantizar la integridad de los datos.
+- [x] Utiliza componentes funcionales y hooks siempre que sea posible.
+- [x] Escribe código limpio y legible. Utiliza nombres de variables descriptivos y sigue las convenciones de estilo de código de JavaScript y React.
+- [x] Gestiona el estado de la aplicación de manera eficiente y evita el uso excesivo de prop drilling.
+- [x] Comenta tu código cuando sea necesario para explicar partes complejas o importantes del mismo.
+- [x] Utiliza React Context o Redux para el estado global de la aplicación.
+- [x] Recomendamos utilizar UUID para la generación de indentificadores únicos de los registros de los usuarios.
+- [x] Se debe respetar el diseño en Figma que se les adjunto en la sección de recursos.
+- [x] Se debe utilizar la librería antd y css/less/sass en caso de ser necesario.
+- [x] Recomendamos reutilizar la mayor cantidad de componentes posibles, y evitar el codigo repetitivo.
