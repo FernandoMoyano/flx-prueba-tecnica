@@ -1,7 +1,7 @@
 {
   "name": "client",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "antd": "^5.17.2",
+    "install": "^0.13.0",
+    "json-server": "^1.0.0-beta.0",
+    "npm": "^10.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
