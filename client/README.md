@@ -52,15 +52,14 @@ npm run serveer
 
 ---
 
-- [x] Utiliza React para construir la interfaz de usuario.
-- [x] La aplicación debe ser un CRUD completo, permitiendo crear, leer, actualizar y eliminar usuarios.
-- [x] Implementa validaciones en los formularios para garantizar la integridad de los datos.
-- [x] Utiliza componentes funcionales y hooks siempre que sea posible.
-- [x] Escribe código limpio y legible. Utiliza nombres de variables descriptivos y sigue las convenciones de estilo de código de JavaScript y React.
+- [x] Se utiliza React para construir la interfaz de usuario.
+- [x] La aplicación es un CRUD completo, permitiendo crear, leer, actualizar y eliminar usuarios.
+- [x] Se implementan validaciones en los formularios para garantizar la integridad de los datos.
+- [x] Se utilizan componentes funcionales y hooks siempre que sea posible.
+- [x] Se utiliza setTimeOut para simular un pequeño proceso de demora en las acciones del usuario
 - [x] Gestiona el estado de la aplicación de manera eficiente y evita el uso excesivo de prop drilling.
 - [x] Comenta tu código cuando sea necesario para explicar partes complejas o importantes del mismo.
-- [x] Utiliza React Context o Redux para el estado global de la aplicación.
-- [x] Recomendamos utilizar UUID para la generación de indentificadores únicos de los registros de los usuarios.
-- [x] Se debe respetar el diseño en Figma que se les adjunto en la sección de recursos.
-- [x] Se debe utilizar la librería antd y css/less/sass en caso de ser necesario.
-- [x] Recomendamos reutilizar la mayor cantidad de componentes posibles, y evitar el codigo repetitivo.
+- [x] Se utiliza React Context para el estado global de la aplicación.
+- [x] Se utiliza UUID para la generación de indentificadores únicos de los registros de los usuarios.
+- [x] Se reespeta el diseño en Figma .
+- [x] Se utiliza la librería antd y css.
