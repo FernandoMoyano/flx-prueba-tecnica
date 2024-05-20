@@ -8,14 +8,4 @@ export interface User {
   age: number;
 }
 
-/* export interface User {
-  id;
-  username: string;
-  name: string;
-  lastname: string;
-  email: string;
-  status: Status;
-  age: number;
-} */
-
 export type Status = "active" | "inactive";
